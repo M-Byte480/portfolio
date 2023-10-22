@@ -9,7 +9,5 @@ import {Router} from "@angular/router";
 export class NavBarComponent {
   constructor(private router: Router) {
   }
-  goToBlogs(): void{
-    this.router.navigate(['blogs']);
-  }
+
 }

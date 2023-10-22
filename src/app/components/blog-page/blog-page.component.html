@@ -1,0 +1,9 @@
+<div class="page-contents">
+  <ul *ngFor="let blog of blogs">
+    <li class="list">
+      <a [routerLink]="['/blog', blog.id]">
+        {{ blog.title }}
+      </a>
+    </li>
+  </ul>
+</div>

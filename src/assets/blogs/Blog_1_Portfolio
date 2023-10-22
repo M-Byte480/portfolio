@@ -1,0 +1,18 @@
+Blog 1: This Portfolio
+
+
+<p>Hello, and welcome to my first blog post. It is going to be about this application.</p>
+<p>This website is made using Angular. I have gained experience using it while I was on my cooperative education work-placement.</p>
+<p>It's design is quite simple. It has 6 components:
+<ul>
+<li>Navigation Bar</li>
+<li>Home page</li>
+<li>Blogs Page</li>
+<li>Blog</li>
+<li>Contacts</li>
+<li>Projects</li>
+</ul>
+
+The blog component gets injected with plain HTML contents for now, planning on making a transpiler which will format blog post the way I want it and that way I can automate how it works.</p>
+
+<p>That's it for now. I am hoping to make more and update the website as a whole :)</p>

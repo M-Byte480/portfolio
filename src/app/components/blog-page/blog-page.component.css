@@ -1,0 +1,29 @@
+.page-contents{
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "☕︎";
+  color: #abaf70;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+a {
+  color: #76bcff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ff2b;
+  text-decoration:none;
+  cursor:pointer;
+}

@@ -3,12 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { MainContentComponent } from './components/main-content/main-content.component';
 import { NgOptimizedImage } from "@angular/common";
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 import { AppRoutingModule } from './app-routing.module';
-import {RouterOutlet} from "@angular/router";
-
+import {RouterLink, RouterOutlet} from "@angular/router";
+import { BlogPageComponent } from './components/blog-page/blog-page.component';
+import { BlogComponent } from './components/blog-page/blog/blog.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -16,12 +19,17 @@ import {RouterOutlet} from "@angular/router";
     NgOptimizedImage,
     AppRoutingModule,
     RouterOutlet,
+    RouterLink,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
     HomeComponent,
-    MainContentComponent,
     NavBarComponent,
+    BlogPageComponent,
+    BlogComponent,
+    ProjectsComponent,
+    ContactsComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
