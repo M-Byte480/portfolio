@@ -1,8 +1,8 @@
 <div class="page-contents">
-  <ul *ngFor="let blog of blogs">
+  <ul *ngFor="let blog of blogReferences">
     <li class="list">
       <a [routerLink]="['/blog', blog.id]">
-        {{ blog.title }}
+        {{ blog.fileName | splitCamelCase }}
       </a>
     </li>
   </ul>

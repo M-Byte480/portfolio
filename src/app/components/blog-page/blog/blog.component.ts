@@ -1,8 +1,8 @@
 import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import {Blog} from "../../../models/blogs.model";
+import {Blog, BlogReference} from "../../../models/blogs.model";
 import {Router} from "@angular/router";
 import { HttpClient } from '@angular/common/http';
-import {blogsMapping} from "../../../models/blogs-map.model";
+import {BlogsLoaderService} from "../../../services/blogs-loader.service";
 
 @Component({
   selector: 'app-blog',
@@ -13,15 +13,17 @@ export class BlogComponent implements OnInit{
   title: string = '';
   html: string = '';
   blog: Blog = {} as Blog;
-  blogsMapping = blogsMapping;
+  blogReferences: BlogReference[] = [];
   constructor(
     private router: Router,
-    private http: HttpClient
+    private http: HttpClient,
+    private blogLoader: BlogsLoaderService
   ) {
   }
 
   ngOnInit() : void{
-    this.processBlog(this.router.url.substring('/blog/'.length))
+    this.blogReferences = this.blogLoader.loadBlogDetails();
+    this.processBlog(this.router.url.substring('/blog/'.length));
   }
 
   processBlogContents(blog: Blog): void{
@@ -32,12 +34,17 @@ export class BlogComponent implements OnInit{
 
 
   processBlog(id: string): void {
-    const fileName = blogsMapping.get(id);
-    this.http.get(`assets/blogs/${fileName}`, {responseType: 'text'})
+    // @ts-ignore
+    const fileReference: BlogReference = this.blogReferences.find( (blogReference: BlogReference): boolean => {
+      return blogReference.id === id;
+    });
+
+    this.http.get(`assets/blogs/${id}.${fileReference.fileName}`, {responseType: 'text'})
     .subscribe((content: string): void => {
       const fileSplit = content.split(/\r\n\r\n\r\n/);
       this.title = fileSplit[0];
       this.html = fileSplit[1];
     });
   }
+
 }

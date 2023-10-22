@@ -1,4 +1,4 @@
-export const blogsMapping: Map<string, string> = new Map([
-  ['1', 'Blog_1_Portfolio'],
-]);
+export const BlogFiles: string[] = [
+  '1.ThisPortfolio',
+];
 
