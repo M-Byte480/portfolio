@@ -1,5 +1,5 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import {Blog, BlogReference} from "../../../models/blogs.model";
+import {Component, OnInit} from '@angular/core';
+import { BlogReference} from "../../../models/blogs.model";
 import {Router} from "@angular/router";
 import { HttpClient } from '@angular/common/http';
 import {BlogsLoaderService} from "../../../services/blogs-loader.service";
@@ -12,7 +12,6 @@ import {BlogsLoaderService} from "../../../services/blogs-loader.service";
 export class BlogComponent implements OnInit{
   title: string = '';
   html: string = '';
-  blog: Blog = {} as Blog;
   blogReferences: BlogReference[] = [];
   constructor(
     private router: Router,
@@ -26,22 +25,16 @@ export class BlogComponent implements OnInit{
     this.processBlog(this.router.url.substring('/blog/'.length));
   }
 
-  processBlogContents(blog: Blog): void{
-    const details : string[] = blog.content.split('/n/r/n/r')
-    this.title = details[0];
-    this.html = details[1];
-  }
 
 
   processBlog(id: string): void {
-    // @ts-ignore
     const fileReference: BlogReference = this.blogReferences.find( (blogReference: BlogReference): boolean => {
       return blogReference.id === id;
-    });
+    })!; // It will never be undefined
 
     this.http.get(`assets/blogs/${id}.${fileReference.fileName}`, {responseType: 'text'})
     .subscribe((content: string): void => {
-      const fileSplit = content.split(/\r\n\r\n\r\n/);
+      const fileSplit: string[] = content.split(/\r\n\r\n\r\n/);
       this.title = fileSplit[0];
       this.html = fileSplit[1];
     });
