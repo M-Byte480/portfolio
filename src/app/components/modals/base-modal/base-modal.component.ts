@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {BsModalRef} from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-base-modal',
@@ -8,12 +7,10 @@ import {BsModalRef} from 'ngx-bootstrap/modal';
 })
 export class BaseModalComponent {
 
-  modalRef: BsModalRef = new BsModalRef();
 
-  constructor(public bsModalRef: BsModalRef) {
+  constructor() {
   }
 
   close() {
-    this.bsModalRef.hide();
   }
 }
