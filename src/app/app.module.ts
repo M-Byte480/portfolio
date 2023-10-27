@@ -13,6 +13,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SplitCamelCasePipe } from './pipes/split-camel-case.pipe';
+import { ProjectComponent } from './components/projects/project/project.component';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { SplitCamelCasePipe } from './pipes/split-camel-case.pipe';
     ProjectsComponent,
     ContactsComponent,
     SplitCamelCasePipe,
+    ProjectComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

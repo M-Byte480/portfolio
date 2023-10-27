@@ -1,0 +1,17 @@
+.odd{
+  color: green;
+  float: right;
+
+}
+
+.even{
+  color: orange;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

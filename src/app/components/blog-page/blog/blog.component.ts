@@ -25,8 +25,6 @@ export class BlogComponent implements OnInit{
     this.processBlog(this.router.url.substring('/blog/'.length));
   }
 
-
-
   processBlog(id: string): void {
     const fileReference: BlogReference = this.blogReferences.find( (blogReference: BlogReference): boolean => {
       return blogReference.id === id;

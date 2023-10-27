@@ -14,7 +14,7 @@ export class BlogsLoaderService {
   loadBlogDetails(): BlogReference[] {
     let blogReferences: BlogReference[] = [];
 
-    this.files.forEach( (file: string) => {
+    this.files.forEach( (file: string): void => {
       const fileStruct: string[] = file.split('.');
       let blogRef: BlogReference = {} as BlogReference;
       blogRef['id'] = fileStruct[0];
