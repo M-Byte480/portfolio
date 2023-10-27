@@ -1,0 +1,19 @@
+<div class="root" (click)="openProject()">
+  <ng-container *ngIf="float === 'left'">
+    <div class="image-left">
+      <img [src]="project.imageSrc" alt="project image">
+    </div>
+  </ng-container>
+  <div class="text">
+    <h1>{{ project.title }}</h1>
+    <p>{{ project.description }}</p>
+    <a class="link"
+       href="{{ project.link }}"
+       target="_blank" rel="noopener noreferrer">Source Code</a>
+  </div>
+  <ng-container *ngIf="float === 'right'">
+    <div class="image-right">
+      <img [src]="project.imageSrc" alt="project image">
+    </div>
+  </ng-container>
+</div>

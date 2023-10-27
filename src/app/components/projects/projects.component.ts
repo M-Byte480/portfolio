@@ -15,6 +15,9 @@ export class ProjectsComponent implements OnInit{
 
   ngOnInit(): void {
     this.loadProjects();
+    this.projects.forEach( (project: Project) => {
+      console.log(project.imageSrc);
+    })
   }
 
 

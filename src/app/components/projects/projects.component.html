@@ -1,8 +1,7 @@
 <div class="root">
   <ng-container *ngFor="let project of projects; let index = index">
-    <img *ngIf="index % 2 == 0" class="divider" src=" {{ project.imageSrc }}">
     <app-project [project]="project" [index]="index + 1"
+                 [float]="project.imageSrc ? index % 2 === 0 ? 'left' : 'right' : 'none'"
                  [ngClass]="index % 2 == 0 ? 'even' : 'odd'"></app-project>
-    <img *ngIf="index % 2 == 1" class="divider" src=" {{ project.imageSrc }}">
   </ng-container>
 </div>

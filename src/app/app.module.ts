@@ -14,6 +14,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SplitCamelCasePipe } from './pipes/split-camel-case.pipe';
 import { ProjectComponent } from './components/projects/project/project.component';
+import { BaseModalComponent } from './components/modals/base-modal/base-modal.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
@@ -22,7 +24,8 @@ import { ProjectComponent } from './components/projects/project/project.componen
     AppRoutingModule,
     RouterOutlet,
     RouterLink,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule
   ],
   declarations: [
     AppComponent,
@@ -34,6 +37,7 @@ import { ProjectComponent } from './components/projects/project/project.componen
     ContactsComponent,
     SplitCamelCasePipe,
     ProjectComponent,
+    BaseModalComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
