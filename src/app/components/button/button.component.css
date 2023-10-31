@@ -1,0 +1,26 @@
+.root{
+  border: 3px solid #10d712;
+  border-radius: 10px;
+  width: 7rem;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: normal;
+  transition-duration: 0.2s;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  color: #1f1f1f;
+}
+.root:hover {
+  border: 3px solid #0017ff;
+  transform: scale(1.1) translate(-15%, -30%);
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1f1f1f;
+}
+
+
+
+
