@@ -6,10 +6,6 @@
   </ng-container>
   <div class="text">
     <h1>{{ project.title }}</h1>
-    <p>{{ project.description }}</p>
-    <a class="link"
-       href="{{ project.link }}"
-       target="_blank" rel="noopener noreferrer">Source Code</a>
   </div>
   <ng-container *ngIf="float === 'right'">
     <div class="image-right">
@@ -17,3 +13,11 @@
     </div>
   </ng-container>
 </div>
+<!--TEST VAL IS THE TWO WAY BOUND OF IS MODAL OPEN-->
+
+<app-base-modal [(testVal)]="testVal"
+                [title]="project.title"
+                [description]="project.description"
+                [link]="project.link"
+                [linkText]="project.linkText">
+</app-base-modal>

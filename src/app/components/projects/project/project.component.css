@@ -1,18 +1,26 @@
 .root {
   position: relative;
-  width: 110%;
   text-align: center;
   border: 3px solid #219f25;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
   background-color: #004348;
   display: flex;
+  font-family: Calibri, serif;
+  margin: 0.8rem 0;
+  align-content: center;
+  justify-content: center;
+}
+
+h1{
+  font-weight: normal;
 }
 
 .root:hover {
   border: 3px solid #00ff24;
-  transform: scale(1.2);
+  /*transform: scale(1.2);*/
   cursor: pointer;
+  z-index:100;
 }
 
 .index {
@@ -28,21 +36,7 @@
 .text {
   overflow: hidden;
   margin-left: 4%;
-}
-
-a {
-  text-decoration: none;
-  color: #008bfd;
-  font-size: 20px;
-  font-weight: bold;
-  float: right;
-  margin-right: 10px;
-}
-
-a:hover {
-  color: #007fd9;
-  text-decoration: none;
-  cursor: pointer;
+  text-align: center;
 }
 
 img{

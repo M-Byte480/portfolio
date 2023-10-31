@@ -34,6 +34,7 @@ export class ProjectsComponent implements OnInit{
         project['title'] = projectDetails[0];
         project['description'] = projectDetails[1];
         project['link'] = projectDetails[2];
+        project['linkText'] = 'Source Code';
 
         if(!projectDetails[0]){
           return;

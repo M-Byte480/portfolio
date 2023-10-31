@@ -16,7 +16,10 @@ import { SplitCamelCasePipe } from './pipes/split-camel-case.pipe';
 import { ProjectComponent } from './components/projects/project/project.component';
 import { BaseModalComponent } from './components/modals/base-modal/base-modal.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatDialogModule} from "@angular/material/dialog";
+import { ButtonComponent } from './components/button/button.component';
+import { FormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   imports: [
     BrowserModule,
@@ -25,7 +28,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     RouterOutlet,
     RouterLink,
     HttpClientModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatDialogModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   declarations: [
     AppComponent,
@@ -38,6 +44,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     SplitCamelCasePipe,
     ProjectComponent,
     BaseModalComponent,
+    ButtonComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

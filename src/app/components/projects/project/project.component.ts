@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {Project} from "../../../models/projects.model";
 import {BaseModalComponent} from "../../modals/base-modal/base-modal.component";
 
@@ -12,12 +12,15 @@ export class ProjectComponent {
   @Input() project: Project = {} as Project;
   @Input() index: number = 0;
   @Input() float: string = 'none';
-
+  isOpen: boolean = false;
+  testVal : boolean = false;
   constructor() {
   }
 
   openProject(): void{
-    console.log(this.project.link);
+
+    this.isOpen = true;
+    this.testVal = true;
   }
 
 }
