@@ -20,9 +20,9 @@
 .content{
   position: relative;
   vertical-align: middle;
-  top: 25%;
-  left: 30%;
-  width: 45%;
+  top: 20%;
+  left: 25%;
+  width: 55%;
   background-color: #d7d7d7;
   z-index: 997;
   overflow: hidden;
@@ -42,6 +42,12 @@ text-align: center;
   font-size: medium;
   color: black;
   margin-bottom: 0.5rem;
+
+  padding: 0 0 2% 2%;
+  & pre {
+    font-family: Calibri, serif;
+  white-space: pre-wrap;
+  }
 }
 
 .btn{
@@ -74,3 +80,6 @@ text-align: center;
   border: solid 2px #08bf29;
 }
 
+.outer_description{
+  background-color: black;
+}

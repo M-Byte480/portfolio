@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Project} from "../../models/projects.model";
-import {BlogReference} from "../../models/blogs.model";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -20,28 +19,44 @@ export class ProjectsComponent implements OnInit{
     })
   }
 
+  async loadProjects(): Promise<void> {
+    // @ts-ignore
+    const content: string = await this.http.get('assets/projects/listOfProjects', { responseType: 'text' }).toPromise();
+    const lines: string[] = content.split(/\r\n/);
 
-  loadProjects(): void {
-    this.http.get(`assets/projects/listOfProjects`, {responseType: 'text'})
-    .subscribe((content: string): void => {
-      const lines: string[] = content.split(/\r\n/);
+    for (const line of lines) {
+      const project: Project = {} as Project;
+      const projectDetails: string[] = line.split(';');
 
+      project.title = projectDetails[0];
+      project.link = projectDetails[2];
+      project.linkText = 'Source Code';
 
-      lines.forEach((line: string): void => {
-        const project: Project = {} as Project;
-        const projectDetails: string[] = line.split(';');
+      if (!projectDetails[0]) {
+        continue;
+      }
 
-        project['title'] = projectDetails[0];
-        project['description'] = projectDetails[1];
-        project['link'] = projectDetails[2];
-        project['linkText'] = 'Source Code';
+      try {
+        project.description = await this.getProject(projectDetails[1]);
+      } catch (error) {
+        console.error(`Failed to fetch description: ${error}`);
+      }
 
-        if(!projectDetails[0]){
-          return;
+      this.projects.push(project);
+    }
+  }
+
+  private getProject(projectName: string): Promise<string> {
+    return new Promise((resolve, reject): void => {
+      this.http.get(`assets/projects/descriptions/${projectName}`, { responseType: 'text' })
+      .subscribe(
+        (content: string) => {
+          resolve(content);
+        },
+        (error) => {
+          reject(error);
         }
-
-        this.projects.push(project);
-      });
+      );
     });
   }
 }

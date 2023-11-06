@@ -1,0 +1,17 @@
+<pre>
+Group project done by Tadhg Ryan, Brendan Quinn, Stephen Fitzpatrick and myself.
+The goal was the create and simulate the back-end of a restaurant management system.
+
+  It had to include and meet the following requirements:
+      - Be able to make bookings
+      - Manage bookings
+      - Manage tables
+      - Manage staff
+      - Manage menu
+      - Manage orders
+      - Manage payments
+      - View income between two dates
+
+Our project had a boot up system, and it would check if its the first time booting up.
+If it was, it would create the owner account and you (the owner) be able to create a restaurant, add managers, manage menus
+and be able to see income between two dates.</pre>

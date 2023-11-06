@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {animate, state, style, transition, trigger} from "@angular/animations";
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-base-modal',
@@ -32,7 +32,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 export class BaseModalComponent {
   // Test val is the two way is modal open
   @Input() testVal: boolean = false;
-  @Output() testValChange = new EventEmitter<boolean>();
+  @Output() testValChange : EventEmitter<boolean> = new EventEmitter<boolean>();
   @Input() description: string= '';
   @Input() title: string = '';
   @Input() link: string = '';
@@ -49,12 +49,9 @@ export class BaseModalComponent {
     this.testValChange.emit(this.testVal);
   }
 
-  nothing() {
+  nothing(): void {}
 
-  }
-
-  openLink() {
+  openLink(): void {
     window.open(this.link, '_blank');
-
   }
 }
