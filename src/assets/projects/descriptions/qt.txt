@@ -1,0 +1,6 @@
+<div style="text-align:center; height: 400px;">
+  <p>This project was about implementing an event drive cooking application.
+  Here is the video of me walking through the code under 5 minutes.</p>
+  <div style="content-align:center; " >
+    <iframe src="https://www.youtube.com/embed/vyX2W8G3pG0" frameborder="0" allowfullscreen style="height:350px; width: 400px;"></iframe>
+</div>

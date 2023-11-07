@@ -1,11 +1,12 @@
 <div class="root" *ngIf="testVal" [@inOutAnimation]>
   <div class="content" (click)="nothing()">
     <div class="title">{{ title }}</div>
-    <div [innerHTML]="description" class="description"></div>
+    <div [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(this.description)" class="description"></div>
     <div class="actions">
       <button class="btn" (click)="close()">Close</button>
       <button class="btn" (click)="openLink()">{{ linkText }}</button>
     </div>
+
   </div>
   <div class="background" (click)="close()"></div>
 </div>

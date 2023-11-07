@@ -1,0 +1,13 @@
+<p>
+This was my first 'big' project in Uni. I had a passion for maths and physics and prime-numbers have always interested me.
+Whenever I wanted to learn a new language, a prime number checker/finder was always my first project.
+</p>
+
+<p>
+Racket is a functional programming language, with a different syntax to most other languages, with prefix notation.
+I really enjoyed making it, getting to grips with the syntax and the functional programming paradigm.
+</p>
+
+<p>
+Because Racket is old it uses certain low level functions and you had to come up with clever ways to get around it.
+</p>

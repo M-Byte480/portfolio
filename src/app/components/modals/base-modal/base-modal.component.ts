@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
+import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-base-modal',
@@ -37,11 +38,12 @@ export class BaseModalComponent {
   @Input() title: string = '';
   @Input() link: string = '';
   @Input() linkText: string = '';
-  constructor() {
+
+  trustedHtml: SafeHtml = '';
+  constructor(public sanitizer: DomSanitizer) {
   }
 
   open(): void{
-
   }
 
   close(): void{

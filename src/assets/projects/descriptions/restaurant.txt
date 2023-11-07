@@ -1,17 +1,23 @@
-<pre>
+<div class="container">
+<p>
 Group project done by Tadhg Ryan, Brendan Quinn, Stephen Fitzpatrick and myself.
 The goal was the create and simulate the back-end of a restaurant management system.
+</p>
 
+  <div class="bullet_points">
   It had to include and meet the following requirements:
-      - Be able to make bookings
-      - Manage bookings
-      - Manage tables
-      - Manage staff
-      - Manage menu
-      - Manage orders
-      - Manage payments
-      - View income between two dates
+  <ul>
+    <li>Be able to create a restaurant</li>
+    <li>Manage bookings</li>
+    <li>Manage tables</li>
+    <li>Manage staff</li>
+    <li>Manage menu</li>
+    <li>Manage orders</li>
+    <li>Manage payments</li>
+    <li>View income between two dates</li>
+  </ul></div>
 
-Our project had a boot up system, and it would check if its the first time booting up.
+<p>Our project had a boot up system, and it would check if its the first time booting up.
 If it was, it would create the owner account and you (the owner) be able to create a restaurant, add managers, manage menus
-and be able to see income between two dates.</pre>
+and be able to see income between two dates.</p>
+</div>
