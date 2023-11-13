@@ -1,0 +1,9 @@
+<p>
+During my work-placement I worked on a full stack project for internal uses.
+It used Angular for the front-end, Spring Boot for the back-end and PostgreSQL for the database.
+It has inspired me to try and setup a SpringBoot application from the ground up.
+</p>
+
+<p>
+Looking forward to enhance and expand from this, as this is just the foundations to get an API up and running.
+</p>
