@@ -1,0 +1,48 @@
+PyCon Ireland 2023
+
+
+<p class="p-pycon2023">This year, Saturday 11th September 2023, as part of the Computer Society UL, we had the opportunity to travel upto Dublin and experience my first ever convention. PyCon Ireland 2023 was a great experience, I got to meet some of the most influential people in the Python community. There were constant workshops and talks held during the event, and I am going to share my experiences of it.</p>
+
+<p class="p-pycon2023">Woke up at around 3:00am to get myself ready and walk to the bus stop, leaving at 5:00am. Arrived in Dublin at around 8:00am, got breakfast at a <i>McDonald's (most College Student food)</i> and then walked to the Radisson Blu Royal Hotel. It was a very fancy place. In there we were greeted with the snacks, coffee and tea, then went to the opening ceremony. It was unfortunate to hear that PyCon Ireland 2023 barely broke even within €100 range, but rest reassured there will by a PyCon 2024, but the way this is currently going it is not sustainable.</p>
+
+<h3 class="pycon2023">9:30am - The Snake of Theseus</h3>
+<p class="p-pycon2023">The talk was hosted by Pablo Galindo Salgado, a Core Python Infrastructure Developer. He talked about the history of Python Python and in its' current state, methaphorically comparing it to the Boat of Theseus. In Python's current state, there is roughly 10% of the original code left, and it is still being used today. It was quite an impressive talk and seeing a core developer who contributes to Python's infrastructure and its compiler was insane. Pablo continued talking about the future phases of Python, such as improving on the multithreading system.</p>
+<p class="p-pycon2023">One point stood out to me, and it was how it took nearly 30 years to be able to improve on its compiler and its performance</p>
+
+<h3 class="pycon2023">10:25am - How to implement a Python-like programming language</h3>
+<p class="p-pycon2023">In the past, I had a little experience on building a statically typed compiler in C++ and I was excited to learn hands on, in-person on how to build a compiler/programming language like Python. This talk was hosted by Rodrigo Girão Serrão who is a Python expert, to say the least. His explanations were great and you could see from his talk that he enjoys what he is doing and has a complete and strong understanding of it. </p>
+<p class="p-pycon2023">Rodrigo went through the different stages of compiling a language, going from the Tokenization -> Parsing -> Interpreter -> Compiler. It was a great experience, it was such a pity I didn't bring my laptop :< </p>
+
+<h3 class="pycon2023">11:45am - How I lost 1000 euros betting on CS:GO with machine learning</h3>
+<p class="p-pycon2023">As a CSGO player, I know from experience that gambling is bad <i>(Not like it is going to stop me)</i> This talk was hosted by Pedro Tabacof, a Machine Learning scientist and Intercom. Pedro and his friend had the idea to analyze data of CSGO tournaments and apply machine learning to predict and bet for him. Unfortunately for him, the algorithm was not well optimized. He spoke about gambling strategies, such as what percent of your money you should bet to make the most return, while still being catious. </p>
+<p class="p-pycon2023">His algorithm was a far too aggressive and ended up losing over time. My friends' and I were discussing if tournament pressure was taken into consideration, as for newer players, they are not used to handling pressure. Pablo mentioned after he pulled out, his friend kept going (using the same algorithm) and he ended up turning a profit (oof).</p>
+
+<h3 class="pycon2023">12:20pm - Lunch</h3>
+<p class="p-pycon2023">The hotel served some lovely wraps, bites and finger food. It was enough to feed us all and then there were some cheesecakes aswell. Friend of mine suggested a sandwich place called <i>Not Subway</i> which I must say, they were not only nice, but they were also cheap. It was definitely better than Subway.</p>
+
+<h3 class="pycon2023">1:35pm - Don’t be too soft when guiding the catastrophic behaviour of a bullshiter, and other LLM code tips</h3>
+<p class="p-pycon2023">Great name which created curiosity in a lot of us. Morgane Mahaud, data scientist at Spark, talked about Large Language Models (LLM) in this hands on workshop.</p>
+<p class="p-pycon2023">I had some previous experiences with LLM, specifically CodeLlama an open source LLM by Meta, and I was excited to see what was up for this. Morgane gave a great introduction to LLM and how it works. It was a high level overview, but that is all we needed. She had some code prepared for us, and an endpoint setup which we were able to access via a token.</p>
+<p class="p-pycon2023">Key point to understand that an LLM is just a computer trying to put words (tokens) together to match the best response to your statement. It is stateless so with each query it does not remember what you said before. It was good to see some of my previous knowledge being comfirmed here, such as prompt engineering, how to create a converstation with it (which you do by providing the previous responses as a prompt), giving it a persona, instructions on how to and how NOT to respond. Honestly we had great fun. </p>
+
+<h3 class="pycon2023">3:40pm - The Standard Library Tour</h3>
+<p>Mia Bajić Software Engineer at Ataccama and Co-Organizer of EuroPython, gave a great talk on not so well known Python tools provided by the standard library. It was quite an interesting talk some interesting on overloading and type checking function tools. I can't recall their names off top of my head, but it was definitely note worthy.</p>
+
+<h3 class="pycon2023">4:15pm - NiceGUI: Inventing Python’s Nicest UI Framework</h3>
+<p>As a fullstack developer who uses Angular it was great to see a full on Python Framework. Falko Schindler, Lead Developer at Zauberzeug, him and his small team decided to make a GUI framework for Python. My previous experience with CodeLlama we had implemented a UI using StreamLit which is a great framework, but it has its own limitations which Falko pointed out. This includes event listeners, and the ability to create a custom UI. </p>
+<p>NiceGUI (pronounced Nice Guy) in contrast, uses call back functions as event binding which is not only performant, but the layout is much more readable, nearly like HTML page. It provides customize ability by injecting CSS into the components. I am very excited to see its future, as it looked very promising, I will definitely give it a try in the future. </p>
+
+<h3 class="pycon2023">4:50pm - Pessimism, optimism, realism and Django database concurrency</h3>
+<p>Aivars Kalvāns, a FinTech Developer, gave a talk about Django communicating with Databases. The talk was about how Django hanles concurrency and how it locks the database connection while writing to it. Aivars spoke on how to improve your code and limit bottle-necking, and how future versions of Django will improve on this. </p>
+
+<h3 class="pycon2023">5:25pm - Lightning Talks</h3>
+<p>Lightning talks were definitely one of my favourite part of the event. Anyone could signup and show whatever they wanted to. Some points stuff to point out were:</p>
+<p>David Lynch's talk on currying (sounded delcious at first) and was even more impressive to see it, unfortunately as interesting as it was it is not practical :(</p>
+<p>Rodrigo gave two talks, he used PyGame to do some live coding and re-created the Mandelbrot Set infront of our own eyes. I had a lecturer in college talking about it, and I was mind blown how he just did it right there and then. </p>
+<p>Rodrigo's second talk was about a <a href="https://mathspp.com/blog/single-line-calculator">single-line calculator</a> which got me really excited as I love fancy stuff like this. I have watched a video on someone making the spinning donut in Python. The use of short-circuiting and ternary operators was great to learn about. </p>
+
+<h3 class="pycon2023">7:00pm - Entertainment</h3>
+<p>As for closing events there was food and drinks served and we were able to socialize. Unfortunately, our buses were due so it was cut short. </p>
+
+<h1 class="pycon2023">Conclusion</h1>
+<p>PyCon was an experience and got to see something I really enjoy. As someone said, you have to be passionate to be involved in the tech community, and I am glad I am. I am looking forward to PyCon 2024 and hopefully I will be able to attend more events like this.</p>
