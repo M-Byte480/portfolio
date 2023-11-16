@@ -12,6 +12,7 @@ import {BlogsLoaderService} from "../../../services/blogs-loader.service";
 export class BlogComponent implements OnInit{
   title: string = '';
   html: string = '';
+  time: string = '';
   blogReferences: BlogReference[] = [];
   constructor(
     private router: Router,
@@ -33,8 +34,11 @@ export class BlogComponent implements OnInit{
     this.http.get(`assets/blogs/${id}.${fileReference.fileName}`, {responseType: 'text'})
     .subscribe((content: string): void => {
       const fileSplit: string[] = content.split(/\r\n\r\n\r\n/);
-      this.title = fileSplit[0];
+      const titleAndAuth: string[] = fileSplit[0].split(/\r\n/);
+      this.title = titleAndAuth[0];
       this.html = fileSplit[1];
+
+      this.time = titleAndAuth[1];
     });
   }
 

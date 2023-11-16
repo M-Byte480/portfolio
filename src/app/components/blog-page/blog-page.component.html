@@ -1,9 +1,15 @@
 <div class="page-contents">
-  <ul *ngFor="let blog of blogReferences">
-    <li class="list">
-      <a [routerLink]="['/blog', blog.id]">
-        {{ blog.fileName | splitCamelCase }}
-      </a>
-    </li>
-  </ul>
+
+  <table bordercolor="black">
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+    </tr>
+    <tr *ngFor="let blog of blogReferences">
+      <td><span>{{blog.id}}</span></td>
+      <td><a [routerLink]="['/blog', blog.id ]">{{blog.fileName | splitCamelCase}}</a></td>
+    </tr>
+  </table>
 </div>
+
+

@@ -20,6 +20,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { ButtonComponent } from './components/button/button.component';
 import { FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from "@angular/material/table";
 @NgModule({
   imports: [
     BrowserModule,
@@ -31,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NoopAnimationsModule,
     MatDialogModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   declarations: [
     AppComponent,

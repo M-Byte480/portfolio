@@ -1,4 +1,7 @@
 <div class="root">
   <h1>{{ title }} </h1>
-  <div [innerHTML]="html" class="content"></div>
+  <div class="content">
+    <div class="author">Milan Kovacs - {{ time }}</div>
+    <div [innerHTML]="html"></div>
+  </div>
 </div>

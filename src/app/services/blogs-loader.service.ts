@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {BlogFiles} from "../models/blogs-map.model";
+import {BlogFiles} from "../models/blogs.model";
 import {BlogReference} from "../models/blogs.model";
 
 @Injectable({
@@ -22,7 +22,8 @@ export class BlogsLoaderService {
 
       blogReferences.push(blogRef);
     });
-
     return blogReferences;
   }
+
+
 }

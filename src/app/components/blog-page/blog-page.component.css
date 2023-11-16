@@ -2,24 +2,15 @@
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-}
+/*  vertically align items*/
 
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
-ul li::before {
-  content: "☕︎";
-  color: #abaf70;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
 }
 
 a {
-  color: #76bcff;
+  color: #ff126d;
   text-decoration: none;
+  /*font-weight: bold;*/
+  font-style: italic;
 }
 
 a:hover {
@@ -27,3 +18,52 @@ a:hover {
   text-decoration:none;
   cursor:pointer;
 }
+
+table, th, td {
+  border: 2px solid #56b905;
+  border-collapse: collapse;
+}
+
+table {
+  width: 40%;
+  margin-top: 4rem ;
+}
+
+th{
+  color: wheat;
+  font-style: italic;
+  font-weight: normal;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+tr>td:nth-child(1){
+  color: #abaf70;
+}
+
+table>tr:nth-child(3n+1)>td:nth-child(1)>span{
+  display: none;
+}
+table>tr:nth-child(5n+1)>td:nth-child(1)>span{
+  display: none;
+}
+
+table>tr:nth-child(3n+1)>td:nth-child(1):after{
+  content: "☕︎";
+}
+
+table>tr:nth-child(5n+1)>td:nth-child(1):after{
+  content: "🍹︎";
+}
+
+table>tr:nth-child(3n+1):nth-child(5n+1)>td:nth-child(1):after{
+  content: "☕︎🍹︎";
+}
+
