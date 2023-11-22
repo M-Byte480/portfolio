@@ -33,7 +33,7 @@ jobs:
     - name: Deploy to SSH server
       uses: appleboy/ssh-action@v0.1.10
       with:
-        host: ${{ inputs.SSH_HOST }}
+        host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_NAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
