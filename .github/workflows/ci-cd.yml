@@ -38,8 +38,10 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
+          mkdir hello_workd
           cd public_html
-          rm -rf *
-          cp -r $GITHUB_WORKSPACE/dist/portfolio/* .
+          mkdir hello_world
+          # rm -rf *
+          # cp -r $GITHUB_WORKSPACE/dist/portfolio/* .
         timeout: 2m
 
