@@ -40,11 +40,7 @@ jobs:
         command_timeout: 30m
         script: | 
           echo "Nice Job!!!"
-        # ls -la
-        # mkdir hello_workd
-        # cd public_html
-        # mkdir hello_world
-        # rm -rf *
-        # cp -r $GITHUB_WORKSPACE/dist/portfolio/* .
-        # timeout: 2m
-
+          mkdir hello_workd
+          cd public_html
+          rm -rf *
+          cp -r $GITHUB_WORKSPACE/dist/portfolio/* .
