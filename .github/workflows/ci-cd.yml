@@ -38,6 +38,8 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
+          eval "$(ssh-agent -s)"
+          ssh-add - <<<"${{ secrets.SSH_PRIVATE_KEY }}"
           cd public_html
           rm -rf *
           cp -r $GITHUB_WORKSPACE/dist/portfolio/* .
