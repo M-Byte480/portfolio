@@ -39,5 +39,5 @@ jobs:
         script: |
           cd public_html
           rm -rf *
-          cp -r $GITHUB_WORKSPACE/dist/your-angular-app/* .
+          cp -r $GITHUB_WORKSPACE/dist/portfolio/* .
 
