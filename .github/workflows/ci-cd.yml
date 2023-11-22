@@ -31,11 +31,11 @@ jobs:
 
     steps:
     - name: Deploy to SSH server
-      uses: appleboy/ssh-action@master
+      uses: webfactory/ssh-agent@v0.8.0
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
           cd public_html
