@@ -38,7 +38,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_HOST }}
           cd public_html
           rm -rf *
           cp -r $GITHUB_WORKSPACE/dist/portfolio/* .
