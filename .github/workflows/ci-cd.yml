@@ -38,6 +38,7 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
+          ls -la
           mkdir hello_workd
           cd public_html
           mkdir hello_world
