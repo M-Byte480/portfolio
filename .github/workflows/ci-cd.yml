@@ -40,6 +40,7 @@ jobs:
         command_timeout: 30m
         script: | 
           cd public_html
+          ls -a ${{ github.workspace }}
           rm -rf *
           ls
           ls -a
