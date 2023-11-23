@@ -28,7 +28,6 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         echo "$SSH_PRIVATE_KEY" > ./id_rsa
-        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
         ls -a
-        chmod 600 ~/.ssh/id_rsa
+        chmod 600 ./id_rsa
         scp -i ./id_rsa -r ./dist/* milan@skynet.skynet.ie:/
