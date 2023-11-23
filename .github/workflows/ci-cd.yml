@@ -40,6 +40,8 @@ jobs:
         command_timeout: 30m
         script: | 
           echo "Nice Job!!!"
+          echo $GITHUB_WORKSPACE
+          echo ${{ github.workspace }}
           mkdir hello_workd
           cd public_html
           rm -rf *
