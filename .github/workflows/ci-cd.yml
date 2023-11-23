@@ -23,16 +23,13 @@ jobs:
         npm install
         npm run build
         ls 
-        
+        scp -i  FILENAME USER@SERVER:/home/USER/FILENAME
+
+
     - name: Copy Dist to Server
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_NAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          ls
-          ls -a
-          touch hellot.txt
-          scp hello.txtmilan@skynet.skynet.ie:/
-          scp -r ./dist/* milan@skynet.skynet.ie:/
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      run: |
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        scp -r ./dist/* milan@skynet.skynet.ie:/
