@@ -23,12 +23,7 @@ jobs:
         npm install
         npm run build
         ls 
-  deploy:
-    runs-on: ubuntu-latest
-
-    needs: build
-
-    steps:
+        
     - name: Copy Dist to Server
       uses: appleboy/ssh-action@master
       with:
