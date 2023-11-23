@@ -30,11 +30,12 @@ jobs:
 
     steps:
     - name: Copy Files to SSH Server
-      uses: appleboy/scp-action@v0.2.0
+      uses: appleboy/scp-action@v0.1.4
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_NAME }}
+        port: 22
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         source: dist
-        target: /path/to/destination
+        target: /public_html
         strip_components: 1
