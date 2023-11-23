@@ -39,10 +39,6 @@ jobs:
         port: 22
         command_timeout: 30m
         script: | 
-          echo "Nice Job!!!"
-          echo $GITHUB_WORKSPACE
-          echo ${{ github.workspace }}
-          mkdir hello_workd
           cd public_html
           rm -rf *
-          cp -r $GITHUB_WORKSPACE/dist/* .
+          cp -r ${{ github.workspace }}/dist/* .
