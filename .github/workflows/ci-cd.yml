@@ -29,13 +29,11 @@ jobs:
     needs: build
 
     steps:
-    - name: Copy Files to SSH Server
-      uses: appleboy/scp-action@v0.1.4
+    - name: Copy Dist to Server
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_NAME }}
-        port: 22
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: dist
-        target: /public_html
-        strip_components: 1
+        username: ${{ secrets.SSH_USERNAME }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: |
+          scp -r ./dist/* milan@skynet.skynet.ie:/
