@@ -31,4 +31,8 @@ jobs:
         username: ${{ secrets.SSH_NAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
+          ls
+          ls -a
+          touch hellot.txt
+          scp hello.txtmilan@skynet.skynet.ie:/
           scp -r ./dist/* milan@skynet.skynet.ie:/
