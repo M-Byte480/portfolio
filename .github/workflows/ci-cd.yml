@@ -26,8 +26,12 @@ jobs:
     - name: Copy Dist to Server
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_PUBLIC_KEY: ${{ secrets.SSH_PUBLIC_KEY }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         echo "$SSH_PRIVATE_KEY" > ./id_rsa
+        echo "$SSH_PUBLIC_KEY" > ./id_rsa2
         ls -a
         chmod 600 ./id_rsa
-        scp -i ./id_rsa -r ./dist/* milan@skynet.skynet.ie:/
+        chmod 600 ./id_rsa2
+        scp -i ./id_rsa2 -r ./dist/* milan@skynet.skynet.ie:/
