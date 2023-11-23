@@ -43,5 +43,5 @@ jobs:
           rm -rf *
           ls
           ls -a
-          cp -r ${{ github.workspace }}/* .
+          cp -r ${{ github.workspace }}/portfolio/* .
 #  cp -r /home/runner/work/portfolio/portfolio/dist/* .
