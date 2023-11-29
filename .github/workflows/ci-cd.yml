@@ -19,18 +19,17 @@ jobs:
         node-version: '16'
 
     - name: Install Dependencies and Build
-      run: |
-        npm install
-        npm run build
-    - name: Deploy to SSH Server
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan skynet.skynet.ie >> ~/.ssh/known_hosts
-          ssh -i ~/.ssh/id_rsa milan@skynet.skynet.ie 
+        npm install
+        npm run build
+        ls -a
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan skynet.skynet.ie >> ~/.ssh/known_hosts
+        ssh -i ~/.ssh/id_rsa milan@skynet.skynet.ie 
           
 # scp -r ./* milan@skynet.skynet.ie:/
 # echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
