@@ -14,7 +14,11 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
-        ssh -i ~/.ssh/id_rsa milan@skynet.skynet.ie  
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          scp -r ./* milan@skynet.skynet.ie:/
+          ssh -i ~/.ssh/id_rsa milan@skynet.skynet.ie  
 # echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
 # chmod 600 ~/.ssh/id_rsa
 # scp -v -r ./* milan@skynet.skynet.ie:/
