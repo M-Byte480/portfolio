@@ -28,7 +28,7 @@ h1{
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.34);
   padding: 1%;
   text-align: center;
-  margin: 12px 12px 12px 25px;
+  margin: 12px 12px 12px 12px;
 }
 
 p {
@@ -64,8 +64,7 @@ p {
 .two-sides-container{
   display: flex;
   flex-display: row;
-  width: 85%;
-
+  width: 84%;
 }
 
 .left-side{
@@ -219,3 +218,6 @@ a:hover, a:active {
   transition-duration: 300ms;
 }
 
+.description{
+  padding: 2%;
+}
