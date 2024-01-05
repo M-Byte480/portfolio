@@ -39,7 +39,6 @@ export class BaseModalComponent {
   @Input() link: string = '';
   @Input() linkText: string = '';
 
-  trustedHtml: SafeHtml = '';
   constructor(public sanitizer: DomSanitizer) {
   }
 

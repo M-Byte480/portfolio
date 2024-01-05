@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit{
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.loadProjects();
+    this.loadProjects().then();
     this.projects.forEach( (project: Project) => {
       console.log(project.imageSrc);
     })

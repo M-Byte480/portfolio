@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {BlogReference} from "../../models/blogs.model";
 import {BlogsLoaderService} from "../../services/blogs-loader.service";
-import {MatTableModule} from "@angular/material/table";
-import {CdkTableDataSourceInput} from "@angular/cdk/table";
 
 @Component({
   selector: 'app-blog-page',

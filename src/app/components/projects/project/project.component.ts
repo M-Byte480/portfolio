@@ -1,6 +1,5 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Project} from "../../../models/projects.model";
-import {BaseModalComponent} from "../../modals/base-modal/base-modal.component";
 
 @Component({
   selector: 'app-project',
