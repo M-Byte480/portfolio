@@ -1,8 +1,8 @@
 <p>
 Came accross an ad for a Capture The Flag (CTF) event hosted by <a href="https://challenges.reply.com/tamtamy/home.action">Reply Cyber Security Challenge</a> and decided
-to give it a go with my friends <a href="https://www.linkedin.com/in/euan-bourke/">Euan Bourke</a>,
-<a href="https://www.linkedin.com/in/brian-riordan-437247249/">Brian Riordan</a> and
-<a href="https://www.linkedin.com/in/blake-ryan-27286b234/">Blake Ryan</a>.</p>
+to give it a go with my friends <a href="https://www.linkedin.com/in/euan-bourke/" target="_blank">Euan Bourke</a>,
+<a href="https://www.linkedin.com/in/brian-riordan-437247249/" target="_blank">Brian Riordan</a> and
+<a href="https://www.linkedin.com/in/blake-ryan-27286b234/" target="_blank">Blake Ryan</a>.</p>
 
 <p>
 I have done one CTF before with my work placement company back in June of 2023. It was a lot of fun, did well and learned a lot.
