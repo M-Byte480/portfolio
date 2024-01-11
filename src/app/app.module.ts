@@ -21,6 +21,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from "@angular/material/table";
+import { StrengthBarComponent } from './components/style-components/strength-bar/strength-bar.component';
+import { SkillComponent } from './components/style-components/skill/skill.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -47,6 +49,8 @@ import {MatTableModule} from "@angular/material/table";
     ProjectComponent,
     BaseModalComponent,
     ButtonComponent,
+    StrengthBarComponent,
+    SkillComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

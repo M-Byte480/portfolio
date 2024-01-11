@@ -1,0 +1,20 @@
+<div class="flex-container">
+  <ng-container *ngTemplateOutlet="left ? Image : Description"></ng-container>
+  <ng-container *ngTemplateOutlet="left ? Description : Image"></ng-container>
+</div>
+
+<ng-template #Image>
+  <div class="image-and-bar">
+    <img class="logo" [src]="img" [alt]="alt">
+    <app-strength-bar
+      [rating]="rating"
+      [colour]="colour"
+      [backgroundColour]="background"></app-strength-bar>
+  </div>
+</ng-template>
+
+<ng-template #Description>
+  <div class="description">
+    {{ description }}
+  </div>
+</ng-template>

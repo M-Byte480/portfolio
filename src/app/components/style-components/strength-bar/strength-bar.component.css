@@ -1,0 +1,9 @@
+.background{
+  height: 1rem;
+  border-radius: 1rem;
+  border:  1px solid rgba(217, 217, 217, 0.37);
+}
+
+.bar{
+  border-radius: inherit;
+}
