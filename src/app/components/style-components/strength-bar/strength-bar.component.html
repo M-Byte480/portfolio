@@ -1,8 +1,14 @@
 <div class="background"
-  [style.background-color]="backgroundColour">
-  <div  class="bar"
-        [style.width.%]="rating"
-        [style.background-color]="colour"
-        [style.height.%]="100">
-  </div>
+     [style.background-color]="backgroundColour">
+  <ng-container  *ngFor="let barId of [].constructor(barCount)">
+    <div class="bar"
+         [style.width.%]="rating"
+         [style.background-color]="colour"
+         [style.height.%]="100"
+         [style.color]="colour">
+      <!--    <div class="rating">{{ skillName }} {{ rating }}%</div>-->
+      <div class="skill-name">{{ skillName }}</div>
+      <div class="rating">{{ rating }}%</div>
+    </div>
+  </ng-container>
 </div>

@@ -4,53 +4,163 @@
     <p class="text green-glasses-text">to my Portfolio</p>
   </div>
   <div class="two-sides-container">
-    <div class="left-side">
-      <p class="paragraph">
-        My name is <a href="https://www.linkedin.com/in/milan-kovacs-cs/" class="linkedIn" target="_blank">Milan Kovacs</a> currently studying <a href="https://www.ul.ie/courses/bachelor-science-computer-systems" class="linkedIn" target="_blank">Computer Science</a> at the <a href="https://www.ul.ie/" class="linkedIn" target="_blank">University of Limerick</a>. Born in Hungary and moved to Ireland back in 2013. Was introduced to programming with Python in 2017 and been coding ever since.
-      </p>
+<!--    <div class="paragraph-and-skills">-->
 
-      <p class="paragraph">
-        The concept of Object-Oriented Programming was introduced to me in college via Java, and I have been refining its semantics and behaviour ever since. Beside Java, in college I had touched on Lua, C, C++, SQL, HTML and CSS. Throughout it I had used these languages both for assignments and personal projects, which all can be found on my <a href="https://github.com/M-Byte480" target="_blank">GitHub</a> page.
-      </p>
+      <div class="left-side">
+        <div class="paragraphs">
 
-      <p class="paragraph" >
-        Part of my course was to partake in a cooperative work-placement to learn first-hand about the industry. The company I ended up working with was <a href="https://www.gm.com/" target="_blank">General Motors</a>, where I was shown what I have learnt from college in-action but knowledge beyond it. I was introduced to the Agile methodology, and the importance of teamwork and communication.
-        <br>
-        <br>
-        Most of my time was spent working on a fullstack application using <a href="https://spring.io/projects/spring-boot/" target="_blank">Spring Boot</a>, <a href="https://angular.io/" target="_blank">Angular</a> and <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>. Was introduced to a vast array of tools and technologies, <i> such as Kubernetes, Azure DevOps, GitHub, Insomnia, PgAdmin, etc. </i> We were following Scrum framework where we would plan out our delivery goals biweekly, have daily stand-ups and reflect on the progress.
-      </p>
+          <p class="paragraph">
+            My name is <a href="https://www.linkedin.com/in/milan-kovacs-cs/" class="linkedIn"
+                          target="_blank">Milan Kovacs</a> currently studying <a
+            href="https://www.ul.ie/courses/bachelor-science-computer-systems" class="linkedIn"
+            target="_blank">Computer Science</a> at the <a href="https://www.ul.ie/" class="linkedIn"
+                                                           target="_blank">University of Limerick</a>.
+            Born in Hungary and moved to Ireland back in 2013. Was introduced to programming with
+            Python
+            in 2017 and been coding ever since.
+          </p>
 
-      <p class="paragraph" >
-        While developing the application, I was exposed to networking, security and databases. Personally found the high-level overview and designing of it to be the most interesting. Once I had a strong understanding of what problem it solved, it was much easier to navigate and implement features.
-      </p>
+          <p class="paragraph">
+            The concept of Object-Oriented Programming was introduced to me in college via Java, and I
+            have been refining its semantics and behaviour ever since. Beside Java, in college I had
+            touched on Lua, C, C++, SQL, HTML and CSS. Throughout it I had used these languages both
+            for
+            assignments and personal projects, which all can be found on my <a
+            href="https://github.com/M-Byte480" target="_blank">GitHub</a> page.
+          </p>
 
-<!--      <p class="paragraph" >-->
-<!--        -->
-<!--      </p>-->
+          <p class="paragraph">
+            Part of my course was to partake in a cooperative work-placement to learn first-hand about
+            the industry. The company I ended up working with was <a href="https://www.gm.com/"
+                                                                     target="_blank">General
+            Motors</a>,
+            where I was shown what I have learnt from college in-action but knowledge beyond it. I was
+            introduced to the Agile methodology, and the importance of teamwork and communication.
+            <br>
+            <br>
+            Most of my time was spent working on a fullstack application using <a
+            href="https://spring.io/projects/spring-boot/" target="_blank">Spring Boot</a>, <a
+            href="https://angular.io/" target="_blank">Angular</a> and <a
+            href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>. Was introduced to a
+            vast
+            array of tools and technologies, <i> such as Kubernetes, Azure DevOps, GitHub, Insomnia,
+            PgAdmin, etc. </i> We were following Scrum framework where we would plan out our delivery
+            goals biweekly, have daily stand-ups and reflect on the progress.
+          </p>
+
+          <p class="paragraph">
+            While developing the application, I was exposed to networking, security and databases.
+            Personally found the high-level overview and designing of it to be the most interesting.
+            Once I had a strong understanding of what problem it solved, it was much easier to
+            navigate
+            and implement features.
+          </p>
+        </div>
+        <div class="skills">
+          <div class="border no-top-border">
+            <app-skill
+              [img]="'./assets/images/home/arrows.png'"
+              [alt]="'Infinity Arrows'"
+              [rating]="72"
+              [description]="cicdDescription"
+              [left]="true"
+              [invertImage]="true"
+              [skillName]="'Devops, CI/CD'"
+            ></app-skill>
+          </div>
+          <div class="border">
+            <app-skill
+              [img]="'./assets/images/home/team.png'"
+              [alt]="'Group of People'"
+              [rating]="79"
+              [colour]="'#00b9e3'"
+              [background]="'#2f3338'"
+              [description]="teamworkDescription"
+              [left]="false"
+              [skillName]="'Teamwork'"
+              [invertImage]="true"
+            ></app-skill>
+          </div>
+          <div class="border">
+            <app-skill
+              [img]="'./assets/images/home/magnifyingGlass.png'"
+              [alt]="'Magnifying Glass'"
+              [rating]="90"
+              [description]="researchDescription"
+              [left]="true"
+              [skillName]="'Research'"
+              [invertImage]="true"
+            ></app-skill>
+          </div>
+        </div>
     </div>
     <div class="right-side">
       <p class="paragraph" style="text-align: center; font-style: italic;">
         List of skills, tools and languages:
       </p>
 
-      <app-skill
-        [img]="'./assets/images/home/java.png'"
-        [alt]="'Java Logo'"
-        [rating]="78"
-        [colour]="'#00b9e3'"
-        [background]="'#2f3338'"
-        [description]="javaDescription"
-        [left]="true"
-      ></app-skill>
-      <app-skill
-        [img]="'./assets/images/home/java.png'"
-        [alt]="'Java Logo'"
-        [rating]="78"
-        [colour]="'#00b9e3'"
-        [background]="'#2f3338'"
-        [description]="javaDescription"
-        [left]="false"
-      ></app-skill>
+      <div class="border">
+        <app-skill
+          [img]="'./assets/images/home/java.png'"
+          [alt]="'Java Logo'"
+          [rating]="84"
+          [colour]="'#00b9e3'"
+          [background]="'#2f3338'"
+          [description]="javaDescription"
+          [left]="true"
+          [skillName]="'Java and OOP'"
+        ></app-skill>
+      </div>
+      <div class="border">
+        <app-skill
+          [img]="'./assets/images/home/angular.png'"
+          [alt]="'Angular Logo'"
+          [rating]="69"
+          [colour]="'#00b9e3'"
+          [background]="'#2f3338'"
+          [description]="angularDescription"
+          [left]="false"
+          [skillName]="'Angular'"
+        ></app-skill>
+      </div>
+      <div class="border">
+        <app-skill
+          [img]="'./assets/images/home/git.png'"
+          [alt]="'Git Logo'"
+          [rating]="86"
+          [colour]="'#00b9e3'"
+          [background]="'#2f3338'"
+          [description]="sourceControlDescription"
+          [left]="true"
+          [skillName]="'Source Control'"
+        ></app-skill>
+      </div>
+      <div class="border">
+        <app-skill
+          [img]="'./assets/images/home/cpp.png'"
+          [alt]="'C++ Logo'"
+          [rating]="71"
+          [colour]="'#00b9e3'"
+          [background]="'#2f3338'"
+          [description]="cppDescription"
+          [left]="false"
+          [skillName]="'C++, LLP concept'"
+          [barCount]="1"
+        ></app-skill>
+      </div>
+      <div class="border extra-bottom-border">
+        <app-skill
+          [img]="'./assets/images/home/github.png'"
+          [alt]="'GitHub Logo'"
+          [rating]="75"
+          [colour]="'#00b9e3'"
+          [background]="'#2f3338'"
+          [description]="gitHubDescription"
+          [left]="true"
+          [skillName]="'Organisation'"
+          [invertImage]="true"
+        ></app-skill>
+      </div>
     </div>
   </div>
 </div>

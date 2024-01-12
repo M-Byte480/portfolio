@@ -19,18 +19,6 @@ h1 {
   0 20px 20px rgba(0, 0, 0, .15);
 }
 
-.header {
-  align-items: center;
-  justify-content: center;
-  width: 81%;
-  height: 100%;
-  background-color: #1a1a1a;
-  border-radius: 0 0 0 0;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.34);
-  padding: 1%;
-  text-align: center;
-  margin: 30px 12px 16px 12px;
-}
 
 p {
   margin: 0;
@@ -40,17 +28,26 @@ p {
   position: relative;
   display: flex;
   width: 100%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   color: wheat;
 }
 
+.header {
+  align-items: center;
+  justify-content: center;
+  width: 81%;
+  background-color: #1a1a1a;
+  border-radius: 0 0 0 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.34);
+  padding: 1%;
+  text-align: center;
+  margin: 30px 12px 16px 12px;
+}
 
 .text {
   font-weight: bold;
-  /*text-shadow: 2px 2px #ff0000;*/
-  /*text-shadow: #FC0 1px 0 10px;*/
-
 }
 
 .work-in-progress {
@@ -68,30 +65,39 @@ p {
   width: 84%;
 }
 
-.left-side {
+.left-side, .right-side{
   flex: 1;
-  align-items: center;
+}
+
+.left-side {
   justify-content: center;
-  text-align: justify;
-  text-justify: inter-word;
   width: 50%;
   height: 100%;
-  background-color: #1a1a1a;
-  border-radius: 0 0 0 0;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.34);
   margin: 12px 25px 12px 12px;
 }
 
+.paragraphs, .skills{
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #1a1a1a;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.34);
+}
+
+.skills{
+  margin-top: 2.5%;
+  flex-grow: 1;
+}
+
 .right-side {
-  flex: 1;
-  align-items: center;
   justify-content: center;
   width: 50%;
-  height: 100%;
   background-color: #1a1a1a;
   border-radius: 0 0 0 0;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.34);
   margin: 12px 12px 12px 25px;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 0 0 3px;
 }
 
 .simple {
@@ -215,4 +221,19 @@ a:hover, a:active {
 
 .paragraph{
   padding: 2%;
+}
+
+
+.border{
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 2px 0 1px;
+}
+
+.no-top-border{
+  border-width: 0 0 1px;
+}
+
+.extra-bottom-border{
+  border-width: 2px 0 3px;
 }

@@ -9,4 +9,6 @@ export class StrengthBarComponent {
   @Input() rating: number = 0;
   @Input() colour: string = '';
   @Input() backgroundColour: string = '';
+  @Input() skillName: string = '';
+  @Input() barCount: number = 1;
 }

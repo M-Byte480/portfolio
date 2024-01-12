@@ -5,11 +5,14 @@
 
 <ng-template #Image>
   <div class="image-and-bar">
-    <img class="logo" [src]="img" [alt]="alt">
+    <img class="logo" [src]="img" [alt]="alt" [style.filter]=" invertImage ? 'invert(100%)' : 'none'">
     <app-strength-bar
       [rating]="rating"
       [colour]="colour"
-      [backgroundColour]="background"></app-strength-bar>
+      [backgroundColour]="background"
+      [skillName]="skillName"
+      [barCount]="barCount"
+    ></app-strength-bar>
   </div>
 </ng-template>
 
