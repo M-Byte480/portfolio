@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, HostBinding} from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  // animations: [routeAnimationState],
 })
 export class HomeComponent {
   readonly javaDescription: string = 'Picked up Java from the start of college, in 2021. I have been using it in the majority of my Object-Oriented Programs (OOP). Throughout my experience with it, I have enhanced the internal workings of Java to utilize it to its fullest potential, while improving my Object-Oriented thinking alongside it. I had the opportunity to greatly enhance my skills during my work experience in 2023.';
@@ -14,4 +15,7 @@ export class HomeComponent {
   readonly cicdDescription: string = 'Familiar with the concept of Agile development. Hands-on experience in developing and deploying a full-stack application within a team during a previous internship. Aware of the process of stand-ups, backlog refinement, sprint review, and retrospective.';
   readonly teamworkDescription: string = 'Engaged in numerous group projects; research, presentation and coding based, during college. During my cooperative work-placement, I collaborated within a dynamically changing team, welcoming new members from different countries. Played a key role in supporting the onboarding process for these new team members onto the project. ';
   readonly researchDescription: string = 'Extensive experience in conducting research when needed, supported by a solid conceptual foundation. This enables me to effectively utilize various tools and articulate my goal even when I\'m not familiar with the specific terminology. An excellent example of research-based development is evident in this portfolio, made possible by my proficiency in utilizing search engines.';
+
+  // Keeping these comments as a note for self
+  // @HostBinding('@routeAnimationTrigger') routeAnimation = true;
 }
