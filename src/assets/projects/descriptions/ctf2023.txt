@@ -1,21 +1,16 @@
-<p>
-Came accross an ad for a Capture The Flag (CTF) event hosted by <a href="https://challenges.reply.com/tamtamy/home.action">Reply Cyber Security Challenge</a> and decided
-to give it a go with my friends <a href="https://www.linkedin.com/in/euan-bourke/" target="_blank">Euan Bourke</a>,
-<a href="https://www.linkedin.com/in/brian-riordan-437247249/" target="_blank">Brian Riordan</a> and
-<a href="https://www.linkedin.com/in/blake-ryan-27286b234/" target="_blank">Blake Ryan</a>.</p>
+description
+Capture The Flag (CTF) event hosted by Reply Cyber Security Challenge
 
-<p>
-I have done one CTF before with my work placement company back in June of 2023. It was a lot of fun, did well and learned a lot.
+Came across an ad for a Capture The Flag (CTF) event hosted by <a href="https://challenges.reply.com/tamtamy/home.action">Reply Cyber Security Challenge</a> and decided
+to give it a go with my friends <a href="https://www.linkedin.com/in/euan-bourke/" target="_blank">Euan Bourke</a>, <a href="https://www.linkedin.com/in/brian-riordan-437247249/" target="_blank">Brian Riordan</a> and <a href="https://www.linkedin.com/in/blake-ryan-27286b234/" target="_blank">Blake Ryan</a>.
+
+
+I have done one CTF before with my work placement company back in June 2023. It was a lot of fun, did well and learned a lot.
 In contrast to that CTF, this one was a lot more difficult. We were able to solve 2 problems, but it was a great learning experience.
 There was cryptography problems using RSA, website based problems where you had to use networking solutions to get the flag,
-and reverse engineering problems. Had to use Ghidra to reverse engineer a binary file and find the flag.
-</p>
+and reverse engineering problems. Used Ghidra to reverse engineer a binary file to find the flag.
 
-<p>
+
 One of my favourite problems involved an audio file that had text hidden inside it.
 Using a program called Audacity, we were able to see the text hidden inside the audio file when viewing the audio file as a spectrogram.
-</p>
 
-<p>
-You can view our report on the repository on the GitHub down below
-</p>

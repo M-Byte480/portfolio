@@ -1,0 +1,5 @@
+description
+Interested in constructing my own programming language, and along with it, a compiler made with C++.
+
+Followed along with a tutorial to learn about parsing, tokenization and ASTs. Named this language after myself :>
+

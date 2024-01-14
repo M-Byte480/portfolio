@@ -1,7 +1,20 @@
 <div class="root">
-  <ng-container *ngFor="let project of projects; let index = index">
-    <app-project [project]="project" [index]="index + 1"
-                 [float]="project.imageSrc ? index % 2 === 0 ? 'left' : 'right' : 'none'"
-                 [ngClass]="index % 2 == 0 ? 'even' : 'odd'"></app-project>
-  </ng-container>
+  <div class="highlights green-glasses-text">
+    Personal and university projects
+  </div>
+  <div class="columns">
+    <div class="left-column">
+      <ng-container *ngFor="let project of leftProjects; let index = index">
+        <app-project [project]="project">
+        </app-project>
+      </ng-container>
+    </div>
+    <div class="right-column">
+      <ng-container *ngFor="let project of rightProjects; let index = index">
+        <app-project [project]="project">
+        </app-project>
+      </ng-container>
+    </div>
+  </div>
+
 </div>

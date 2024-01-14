@@ -1,0 +1,12 @@
+description
+Project for the games development module, where we had designed a topdown 2D game using Lua and Sonar the game engine.
+
+Group project done by Martynas Danys, Italo Terto da Silva, Stephen Fitzpatrick, Roger Shaw and myself.
+The game is topdown mobile game where the player is aiming at your cursor and shoots at a constant rate.
+
+
+There is a day and night cycle, with clever use of masking we can simulate a torch effect. There are zombies randomly spawning off-screen and with the use of the unit circle they can be orientated to follow the player.
+
+
+The player receives boosts in movement speed, arrow strength and fire rate after certain number of kills, while zombies get stronger overtime. Our idea was influenced by the hit game Vampire Survivors.
+

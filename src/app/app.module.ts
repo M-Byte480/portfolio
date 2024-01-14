@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from "@angular/material/table";
 import { StrengthBarComponent } from './components/style-components/strength-bar/strength-bar.component';
 import { SkillComponent } from './components/style-components/skill/skill.component';
+import { ProjectModalComponent } from './components/modals/project-modal/project-modal.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -51,6 +52,7 @@ import { SkillComponent } from './components/style-components/skill/skill.compon
     ButtonComponent,
     StrengthBarComponent,
     SkillComponent,
+    ProjectModalComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

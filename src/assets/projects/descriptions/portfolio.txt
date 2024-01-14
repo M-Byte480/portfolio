@@ -1,0 +1,8 @@
+description
+Portfolio made using Angular and the different functionalities of it
+
+One of the best ways to show off your skills is by demonstrating it. So, I have decided to make a portfolio site hosted on the web.
+
+
+Most of my Angular skill was picked up during my previous internship. Since then, I have been reading and learning more and more about Angular.
+

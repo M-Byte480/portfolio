@@ -43,10 +43,14 @@ text-align: center;
   color: black;
   margin-bottom: 0.5rem;
 
-  padding: 0 0 2% 2%;
+  padding: 0 5% 2% 2%;
   & pre {
     font-family: Calibri, serif;
     white-space: pre-wrap;
+  }
+
+  p{
+    text-align: justify;
   }
 }
 

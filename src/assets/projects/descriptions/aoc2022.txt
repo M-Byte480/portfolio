@@ -1,0 +1,14 @@
+description
+Advent of Code, the opportunity to learn new languages, new concepts while still having fun.
+
+Since 2021, I have been partaking in the Advent of Code challenge. Each year I learn and train my problem-solving to solve new puzzles.
+
+So far, this is what this repository contains:
+ul
+2021 - Python
+2022 - Java
+2023 - Java
+/ul
+
+It is a great journey, and looking forward to attempting previous years' and get a grasp on Rust.
+

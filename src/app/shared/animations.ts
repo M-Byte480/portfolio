@@ -43,20 +43,17 @@ export const fadeAnimation =
         })
       ], {optional: true}),
 
+      query(':enter', [
+        style({left: '100%'})
+      ], {optional: true}),
 
+      query(':leave', animateChild(), {optional: true}),
       group([
         query(':leave', [
-          animate(300,
-            style({
-              opacity: 0,
-            })
-          ),
+          animate('1s ease-out', style({left: '-100%', opacity: 0}))
         ], {optional: true}),
         query(':enter', [
-          style({
-            opacity: 0,
-          }),
-          animate(0),
+          animate('1s ease-out', style({left: '0%'}))
         ], {optional: true}),
         query('@*', animateChild(), {optional: true})
       ]),

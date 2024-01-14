@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnChanges, signal, Signal} from '@angular/core';
 import {Project} from "../../../models/projects.model";
 
 @Component({
@@ -6,20 +6,27 @@ import {Project} from "../../../models/projects.model";
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnChanges{
 
   @Input() project: Project = {} as Project;
-  @Input() index: number = 0;
-  @Input() float: string = 'none';
+  isActive: Signal<boolean> = signal(false);
   isOpen: boolean = false;
-  testVal : boolean = false;
+  showModal : boolean = false;
+  isExpanded: boolean = false;
   constructor() {
   }
 
-  openProject(): void{
-
-    this.isOpen = true;
-    this.testVal = true;
+  ngOnChanges(): void {
+    console.log(this.isActive);
   }
 
+  openProject(): void{
+    this.isOpen = true;
+    this.showModal = true;
+    this.isExpanded = true;
+  }
+
+  public changeActivity($event: any){
+   this.isExpanded = $event;
+  }
 }

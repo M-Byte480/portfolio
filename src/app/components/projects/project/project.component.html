@@ -1,23 +1,30 @@
-<div class="root" (click)="openProject()">
-  <ng-container *ngIf="float === 'left'">
-    <div class="image-left">
-      <img [src]="project.imageSrc" alt="project image">
-    </div>
+<div class="root" [class.expanded]="isExpanded" (click)="openProject()">
+  <div class="text-container" [style.height.vh]="project.viewHeight || 15" >
+  <ng-container *ngIf="project.imageSrc !== 'assets/images/projects/'">
+    <img class="image"
+         [style.height.vh]="12.5"
+         [src]="project.imageSrc"
+         alt="project image"
+         [style.filter]="'invert(1)'"
+    >
   </ng-container>
-  <div class="text">
-    <h1>{{ project.title }}</h1>
-  </div>
-  <ng-container *ngIf="float === 'right'">
-    <div class="image-right">
-      <img [src]="project.imageSrc" alt="project image">
-    </div>
-  </ng-container>
-</div>
-<!--TEST VAL IS THE TWO WAY BOUND OF IS MODAL OPEN-->
 
-<app-base-modal [(testVal)]="testVal"
+    <div class="text"> {{ project.title }} </div>
+    <p class="hidden">{{ project.description }}</p>
+  </div>
+</div>
+<!-- testVal is a two-way bound variable to check for state being open -->
+
+<app-base-modal [(testVal)]="showModal"
                 [title]="project.title"
-                [description]="project.description"
                 [link]="project.link"
-                [linkText]="project.linkText">
+                [linkText]="project.linkText"
+                (isActive)="changeActivity($event)"
+                [firstParagraph]="project.firstParagraph"
+                [secondParagraph]="project.secondParagraph"
+                [thirdParagraph]="project.thirdParagraph"
+                [ulElements]="project.ulElements"
+                [videoSrc]="project.videoSrc"
+                [olElements]="project.olElements"
+>
 </app-base-modal>

@@ -1,7 +1,29 @@
 <div class="root" *ngIf="testVal" [@inOutAnimation]>
-  <div class="content" (click)="nothing()">
+  <div class="content" (click)="doNothing()">
     <div class="title">{{ title }}</div>
-    <div [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(this.description)" class="description"></div>
+    <!--    <div [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(this.description)" class="description"></div>-->
+    <div class="description">
+      <p [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(firstParagraph)"></p>
+
+      <ng-container *ngIf="videoSrc">
+        <iframe src="{{ videoSrc }}" frameborder="0" allowfullscreen
+                style="height:350px; width: 400px;"></iframe>
+      </ng-container>
+
+      <div>{{ secondParagraph }}
+        <ul>
+          <ng-container *ngFor="let item of ulElements">
+            <li>{{ item }}</li>
+          </ng-container>
+        </ul>
+        <ol>
+          <ng-container *ngFor="let item of olElements">
+            <li>{{ item }}</li>
+          </ng-container>
+        </ol>
+      </div>
+      <p> {{ thirdParagraph }}</p>
+    </div>
     <div class="actions">
       <button class="btn" (click)="close()">Close</button>
       <button class="btn" (click)="openLink()">{{ linkText }}</button>

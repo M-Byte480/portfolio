@@ -1,15 +1,15 @@
-Restaurant Management System;restaurant.txt;https://github.com/M-Byte480/cs4013-RestaurantSystem
-Qt Based Recipe Manager;qt.txt;https://github.com/M-Byte480/cs4076-EventDrivenProgramming-QtProject
-Racket Prime Number Checker;racket_prime.txt;https://github.com/M-Byte480/cs4221-FoundationsOfCS1/blob/main/PrimeNumberFinder.rkt
-Racket Assignments;racket_ass.txt;https://github.com/M-Byte480/cs4221-FoundationsOfCS1
-First HTML Project;first_html.txt;https://github.com/M-Byte480/CS4012-Non-Profit-Fictional-Organisation-Website
-Advent Of Code 2022;aoc2022.txt;https://github.com/M-Byte480/AdventOfCode-2022
-2D Game: The Hunt;the_hunt.txt;https://github.com/M-Byte480/cs4043-GamesDevelopment-TheHunt
-Data Structures And Algorithms Assignments;dataStruct.txt;https://github.com/M-Byte480/cs4115-DataStructuresAndAlgorithms
-Vending Machine;vending.txt;https://github.com/M-Byte480/cs4013-VendingMachine
-Chess in Java;chess.txt;https://github.com/M-Byte480/chess-java
-My Compiler;miko.txt;https://github.com/M-Byte480/MiKo-Compiler
-SpringBoot API;spring.txt;https://github.com/M-Byte480/API
-Github Profile;github_prof.txt;https://github.com/M-Byte480/M-Byte480
-Reply Challenge's CTF 2023;ctf2023.txt;https://github.com/M-Byte480/Reply-Challenges-CTF-WriteUp
-This Portfolio;portfolio.txt;https://github.com/M-Byte480/portfolio
+Restaurant Management System;restaurant.txt;https://github.com/M-Byte480/cs4013-RestaurantSystem;restaurant.png;25
+Qt Based Recipe Manager;qt.txt;https://github.com/M-Byte480/cs4076-EventDrivenProgramming-QtProject;qtBlack.png;
+Racket Prime Number Checker;racket_prime.txt;https://github.com/M-Byte480/cs4221-FoundationsOfCS1/blob/main/PrimeNumberFinder.rkt;three.png;
+Racket Assignments;racket_ass.txt;https://github.com/M-Byte480/cs4221-FoundationsOfCS1;;
+First HTML Project;first_html.txt;https://github.com/M-Byte480/CS4012-Non-Profit-Fictional-Organisation-Website;html.png;
+Advent Of Code 2022;aoc2022.txt;https://github.com/M-Byte480/AdventOfCode-2022;curly.png;
+2D Game: The Hunt;the_hunt.txt;https://github.com/M-Byte480/cs4043-GamesDevelopment-TheHunt;bow.png;
+Data Structures And Algorithms Assignments;dataStruct.txt;https://github.com/M-Byte480/cs4115-DataStructuresAndAlgorithms;;
+Vending Machine;vending.txt;https://github.com/M-Byte480/cs4013-VendingMachine;vending.png;
+Chess in Java;chess.txt;https://github.com/M-Byte480/chess-java;knight.png;
+Compiler;miko.txt;https://github.com/M-Byte480/MiKo-Compiler;c++.png;
+SpringBoot API;spring.txt;https://github.com/M-Byte480/API;spring.png;
+Github Profile;github_prof.txt;https://github.com/M-Byte480/M-Byte480;;
+Reply Challenge's CTF 2023;ctf2023.txt;https://github.com/M-Byte480/Reply-Challenges-CTF-WriteUp;flag.png;
+This Portfolio;portfolio.txt;https://github.com/M-Byte480/portfolio;editPage.png;

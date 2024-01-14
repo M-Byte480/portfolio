@@ -1,0 +1,8 @@
+description
+Unfinished project to simulate a digital chess board which can be played between two players.
+
+Summer of 2022 started working on this project to get my Object-Oriented Programming improved upon.
+
+
+If I were to restart this project, I would design it differently as I am not proud of the code quality.
+
