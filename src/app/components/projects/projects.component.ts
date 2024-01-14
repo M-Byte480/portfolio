@@ -22,7 +22,6 @@ export class ProjectsComponent implements OnInit {
       this.rightProjects = this.projects.slice(this.projects.length / 2);
     });
     this.projects.forEach((project: Project) => {
-      console.log(project.imageSrc);
     });
 
 
@@ -31,7 +30,7 @@ export class ProjectsComponent implements OnInit {
   async loadProjects(): Promise<void> {
     // @ts-ignore
     const content: string = await this.http.get('assets/projects/listOfProjects', {responseType: 'text'}).toPromise();
-    const lines: string[] = content.split(/\r\n/);
+    const lines: string[] = content.split(/\r?\n/);
 
     for (const line of lines) {
       let project: Project = {} as Project;
@@ -51,7 +50,6 @@ export class ProjectsComponent implements OnInit {
         project.imageSrc = `assets/images/projects/${projectDetails[3]}`;
         project.viewHeight = +projectDetails[4];
 
-        console.log(project);
       } catch (error) {
         console.error(`Failed to fetch description: ${error}`);
       }
@@ -76,7 +74,7 @@ export class ProjectsComponent implements OnInit {
 
   private processProject(content: string): Project {
     const project: Project = {} as Project;
-    const lines: string[] = content.split(/\r\n/);
+    const lines: string[] = content.split(/\r?\n/);
     const paragraphs = ['', '', ''];
     let paragraph = 0;
     let firstLine;
