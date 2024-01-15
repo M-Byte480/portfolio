@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "body": "First Comment",
+      "username": "testuser1",
+      "userId": "1",
+      "parentId": null,
+      "createdAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "body": "Second Comment",
+      "username": "testuser2",
+      "userId": "2",
+      "parentId": "1",
+      "createdAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "body": "Third Comment",
+      "username": "testuser3",
+      "userId": "3",
+      "parentId": null,
+      "createdAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "body": "Fourth Comment",
+      "username": "testuser4",
+      "userId": "4",
+      "parentId": "3",
+      "createdAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "body": "Fifth Comment",
+      "username": "testuser5",
+      "userId": "5",
+      "parentId": "4",
+      "createdAt": "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}
