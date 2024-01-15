@@ -1,4 +1,4 @@
-.root {
+.projectRoot {
   position: relative;
   text-align: center;
   border: 3px solid #219f25;
@@ -9,6 +9,7 @@
   margin: 0.8rem 0;
   align-content: center;
   justify-content: center;
+  width: 100%;
   /*height: 20vh;/*/
 }
 
@@ -59,7 +60,7 @@
   transition: visibility 0s, opacity 0.8s linear;
 }
 
-.root:hover{
+.projectRoot:hover{
   scale: 1.2;
   border: 3px solid #00ff24;
   cursor: pointer;

@@ -1,4 +1,4 @@
-.root{
+.projectRoot{
   border: 3px solid #10d712;
   border-radius: 10px;
   width: 7rem;
@@ -12,7 +12,7 @@
   background-color: #ffffff;
   color: #1f1f1f;
 }
-.root:hover {
+.projectRoot:hover {
   border: 3px solid #0017ff;
   transform: scale(1.1) translate(-15%, -30%);
   cursor: pointer;

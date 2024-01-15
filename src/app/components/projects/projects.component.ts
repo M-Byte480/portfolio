@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Project} from "../../models/projects.model";
 import {HttpClient} from "@angular/common/http";
-import {first} from "rxjs";
 
 @Component({
   selector: 'app-projects',
@@ -10,21 +9,24 @@ import {first} from "rxjs";
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [];
+  highlights: Project[] = [];
   leftProjects: Project[] = [];
   rightProjects: Project[] = [];
+  isOdd: boolean = false;
 
+  readonly highlightedProjects: number = 4;
   constructor(private http: HttpClient) {
   }
 
   ngOnInit(): void {
-    this.loadProjects().then(() => {
-      this.leftProjects = this.projects.slice(0, this.projects.length / 2);
-      this.rightProjects = this.projects.slice(this.projects.length / 2);
+    this.loadProjects().then((): void => {
+      const numProjects: number = this.projects.length;
+      const halfOfRemaining: number = (numProjects - this.highlightedProjects )/ 2 + this.highlightedProjects;
+      this.isOdd = (numProjects - this.highlightedProjects) % 2 === 1;
+      this.highlights = this.projects.slice(0, this.highlightedProjects);
+      this.leftProjects = this.projects.slice(this.highlightedProjects, halfOfRemaining);
+      this.rightProjects = this.projects.slice(halfOfRemaining, numProjects - (this.isOdd ? 1 : 0));
     });
-    this.projects.forEach((project: Project) => {
-    });
-
-
   }
 
   async loadProjects(): Promise<void> {

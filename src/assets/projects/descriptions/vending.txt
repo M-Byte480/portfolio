@@ -1,0 +1,3 @@
+description
+An assignment to simulate the behaviour of a vending machine, which keeps track of its contents and the money inserted by the user.
+

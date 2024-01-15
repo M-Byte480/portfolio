@@ -1,4 +1,4 @@
-<div class="root" [class.expanded]="isExpanded" (click)="openProject()">
+<div class="projectRoot" [class.expanded]="isExpanded" (click)="openProject()">
   <div class="text-container" [style.height.vh]="project.viewHeight || 15" >
   <ng-container *ngIf="project.imageSrc !== 'assets/images/projects/'">
     <img class="image"
