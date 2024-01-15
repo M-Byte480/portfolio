@@ -24,6 +24,7 @@ import {MatTableModule} from "@angular/material/table";
 import { StrengthBarComponent } from './components/style-components/strength-bar/strength-bar.component';
 import { SkillComponent } from './components/style-components/skill/skill.component';
 import { ProjectModalComponent } from './components/modals/project-modal/project-modal.component';
+import { NoCacheInterceptorComponent } from './interceptors/no-cache-interceptor/no-cache-interceptor.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -53,6 +54,7 @@ import { ProjectModalComponent } from './components/modals/project-modal/project
     StrengthBarComponent,
     SkillComponent,
     ProjectModalComponent,
+    NoCacheInterceptorComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
