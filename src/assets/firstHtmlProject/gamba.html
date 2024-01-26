@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Gambling</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="./images/logo.ico">
+    </head>
+    <header>
+        <div class="Tab">
+            <h1>National Addiction Services</h1>
+        </div>
+        <img src = "./images/NAS.png" alt = "logo3" class = "logo3">
+        <div class="right">
+            <a href="home.html" class="active"><button class="button">Home</button></a>
+            <div class="dropdown">
+                <button class="button">About</button>
+                <div class="dropdown-menu">
+                    
+                    <div class="dropdown-heading"> Our Services </div>
+                    
+                    <a href="alcohol.html" class="button">Alcohol</a>
+                    <a href="Smoking (1).html" class="button">Smoking</a>
+                    <a href="gamba.html" class="button">Gambling</a>
+
+                </div>
+            </div>
+            <a href="#BlueContainerGamb"><button class="button">Donate</button></a>
+            <a href="Location.html"><button class="button">Location</button></a>
+        </div>
+    </header>
+    <body  onClick="playMyAudio()">
+        <audio src="./audio/MyAudio.mp3" id="GamblingBad"></audio>
+        <script>
+            function playMyAudio(){
+               // document.getElementById("GamblingBad").play();
+            }
+          </script>
+
+    
+        <h2>
+            Gambling in Ireland
+        </h2>
+        
+        <div class  = "p">
+            <p>
+                Gambling has become one of the most rampant addictions in Ireland in the past fifty years.
+                With easy access to a bookmaker's in almost any town, many people who may be suffering in other ways in
+                their lives use gambling to create a sense of hope. This can quickly lead to a dangerous downward spiral]
+                of constantly searching for their next big win. 
+            </p>
+            <br>
+            Unfortunately, this can lead to neglecting responsibilities, missing out on social events, time with your
+            family and loved ones. The worst thing of all is that the betting shops use any and every tactic to keep you 
+            either betting in their shops or betting online. In comparison to other industries, gambling companies will 
+            entice you to keep betting as regularly as possible by offering deals and discounts. 
+        </div>
+        <img src= "https://i.pinimg.com/originals/1a/1b/6e/1a1b6e6771f9d618cced40767aeee941.png" class="Cards" alt="Dont">
+        <img src= "./images/horse.png" class="Horse" alt="Gamble">
+        <h2>
+            What can you do to help yourself or a loved one with a gambling problem?
+        </h2>
+        
+        <ul>
+            <li>
+                Setting limits for yourself is one way to decrease the impact of gambling. Know when enough is enough, count your losses and go home. 
+            </li>
+            <br>
+            <li>
+                Many betting shops allow self exclusion. If you find it difficult to stay out of the bookies, ask the workers behind the counter to exclude you from their shops. 
+                This will mean that they will deny you entry into their shop for up to six months.
+            </li>
+            <br>
+            <li>
+                The National Addiction Services provide free consultation and counselling. If you would like more information on this please call +353 838 28687.
+            </li>
+        </ul>
+        
+        <iframe class="video2" src="https://www.youtube.com/embed/BF5SzIN63w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        
+        <div id = "BlueContainerGamb">
+            <img src = "./images/wecanhelp.png" alt = "logo2" class = "Recovery">
+            <div class="DonateSec">	
+                <article>
+                    <div class="Entry"> 
+                        Please consider donating 
+                    </div>
+                    <select id="PaymentType" name="PaymentType">
+                        <option value="Monthly">Monthly Payment</option>
+                        <option value="Single">Single Payment</option>
+                    </select>
+                    <input type="number" id="donation" name="donation" placeholder="Donate" class="heck"><br><br>
+                    <button class="DonateNow">Donate Now</button>
+                </article>
+            </div>
+        </div>
+        
+        
+        
+        <footer>
+            &copy Nicholas, Craig, Stevo and Milan
+        </footer>
+    </body>
+</html> 

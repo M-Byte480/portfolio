@@ -112,6 +112,7 @@ export class ProjectsComponent implements OnInit {
         i++;
       } else if (firstLine === 'video') {
         videoSrc = secondLine;
+        i++;
       } else if (firstLine === 'description') {
         description = secondLine;
         i++;

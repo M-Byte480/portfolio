@@ -88,3 +88,9 @@ text-align: center;
 .outer_description{
   background-color: black;
 }
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="styles.css">	
+	<link rel="icon" type="image/x-icon" href="./images/logo.ico">
+</head>
+<header>
+	<div class="Tab">
+		<h1>National Addiction Services</h1>
+	</div>
+	<img src = "./images/NAS.png" alt = "logo3" class = "logo3">
+	<div class="right">
+		<a href="home.html" class="active"><button class="button">Home</button></a>
+		<div class="dropdown">
+			<button class="button">About</button>
+			<div class="dropdown-menu">
+				
+				<div class="dropdown-heading"> Our Services </div>
+				
+				<a href="alcohol.html" class="button">Alcohol</a>
+				<a href="Smoking (1).html" class="button">Smoking</a>
+				<a href="gamba.html" class="button">Gambling</a>
+				
+			</div>
+		</div>
+		<a href="#BlueContainer"><button class="button" >Donate</button></a>
+		<a href="Location.html"><button class="button">Location</button></a>
+	</div>
+</header>
+<body>
+	<div class="min">
+		<div class="main">
+			<div class="leftContainer">
+				<img alt="Finance" src="./images/money.jpg" class="money">
+				<div class="TopRight">
+					<ul>
+						<li> We help with financial struggles</li>
+					</ul>
+				</div>
+				<img alt="Second" src="./images/tokens.jpg" class="poker">
+				<div class="BottomLeft">
+					<ul>
+						<li> We provide various help services</li>
+					</ul>
+				</div>
+				<a href="#BlueContainer"><button class="donate"><span>Donate</span></button></a>
+				<img src="./images/happywoma.jpg" alt="Happy Patient" class="Woman">
+			</div>
+			<div class="article">
+				<ul>
+					<li> Our goal is the help the ones in need</li>
+					<li> We supply various services all around the country</li>
+					<li> We help hundreds of people every year to break their bad habit</li>
+				</ul>
+			</div>
+		</div>
+		<div id="BlueContainer" class="BlueContainer">
+			
+			<img alt="Inspirational Recovery" class="Recovery" src="https://sereneretreat.com.my/wp-content/uploads/2019/05/zac-durant-302752-unsplash-1-768x512.jpg">
+			<div class="recoveredPatient"><i>One of our previous recovered patient</i></div>
+			<div class="DonateSec">	
+				
+				<article>
+					<div class="Entry"> 
+						Please consider donating to the cause 
+					</div>
+					<select id="PaymentMethod" name="PaymentMethod">
+						<option value="Monthly">Monthly Payment</option>
+						<option value="Single">Single Payment</option>
+					</select>
+					<input type="number" id="donation" name="donation" placeholder="Donate" class="heck"><br><br>
+					<button class="DonateNow">Donate Now</button>
+				</article>
+				
+			</div>
+		</div>
+		<footer>
+			&copy Nicholas, Craig, Stevo and Milan
+		</footer>
+	</div>
+</body>
+</html>

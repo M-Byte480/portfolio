@@ -1,0 +1,8 @@
+description
+Little explanation of my GitHub profile page
+
+On my GitHub profile, there is a view counter that counts the number of times my profile has been viewed. There is a Spotify now playing widget which is connected to my account.
+
+
+There is a few links which bring you to my other social media accounts. My Discord tag tracks my online status, which is controlled by a bot in a server to check for my status. There is a statics section which displays my commit and contribution statistics.
+

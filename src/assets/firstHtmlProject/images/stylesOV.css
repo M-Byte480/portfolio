@@ -1,0 +1,398 @@
+html{
+	/* width: 1520px; */
+	width: 100%;
+	overflow: auto;
+}
+body{
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: auto ;
+	margin:0;
+}
+article{
+	font-size: medium;
+	line-height: normal;
+	padding: 1vw;
+	text-align: justify;
+	position: absolute;
+	left: 50vw;
+	top: 12vh;
+	width: 44vw;
+	background-color: violet;
+	border: solid 2px black;
+}
+article li{
+	text-align: justify;
+	line-height: 2;
+	list-style-position: outside;
+	
+}
+.leftContainer{
+	height: 80vh;
+	width: 45vw;
+	position: absolute;
+	top: 12vh;
+	left: 2vw;
+	background-color: rgb(224, 224, 224);
+	border: black solid 2px;
+	
+}
+.TopRight{
+	position: absolute;
+	top: 2vh;
+	right: 2vw;
+	border: solid black 2px;
+	width: 18vw;
+}
+.firstImage{
+	padding-left: 5vw;
+	padding-top: 5vh;
+	width: 10vw;
+}
+.BottomLeft{
+	position: absolute;
+	bottom: 50%;
+	left: 2vw;
+	border: solid black 2px;
+	width: 18vw;
+}
+.Body{
+	background-color: red;
+	/*width:80%;
+	height:5%;*/
+	border-radius: 8px;
+}
+.Tab{
+	/*margin: auto;*/
+	padding: 4px;
+	background-color: rgba(10, 10, 10, 1);
+	border-bottom: 5px solid orange;
+	height:50px;
+	/*border-radius:8px;*/
+	border:1px solid black;
+	min-width:1000px;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+	overflow: hidden;
+}
+.Tab h1{
+	/* background-color: #4287f5;	 */
+	margin-left: 2vw ;
+	text-align: Left;
+	line-height: 0.2;
+	/* position: absolute;
+	top: 0; */
+}
+hr{
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+.Tab a{
+	text-decoration: none;
+	color:black;
+}
+.Tab a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.leftButton{
+	/* text-align: center; */
+	/* margin-left:15px; */
+	/* float:left; */
+	position: absolute;
+	left: 15vw ;
+	color:#2f2f2f;
+	text-decoration:one;
+	font-size:17px;
+}
+
+.rightButton{
+	/* text-align: center; */
+	/* float: right; */
+	position: absolute;
+	right: 10%;
+	color:#2f2f2f;
+	text-decoration:one;
+	font-size:17px;
+	top: 5%;
+	right: 1.8%;
+	/* margin-right:15px; */
+}
+
+.button{
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin:4px 2px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+}
+.button1 {
+	background:transparent;
+	color: white;
+	border: 2px solid #4CAF50;
+}
+.button1:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+.main{
+	width: 100%;
+	height: 800px;
+	min-width: 1000px;
+	
+	
+	background-color: #ffffff;
+	
+	
+	z-index: 80;
+	
+	
+}
+h1{
+    text-align: center;
+    color: white;
+}
+h2{
+    margin: 1.5vw;
+    text-align: left;
+    color: black;
+    font-size: larger;
+}
+.p{
+    
+    width: 45%;
+    border-radius: 5px;
+    text-align: left;
+    text-align: justify;
+    margin-left: 1.5vw;
+    
+}
+/* .sideBar{
+	width: 150px;
+	height: 1000px;
+	
+	border:2px solid black;
+	
+	margin-top: 0px;
+	margin-bottom:15px;
+	/* margin-left:15px;	 
+	margin-right:25px;
+	
+	padding: 10px;
+	
+	background-color: rgb(255, 204, 36);
+	z-index: 95;
+	position: relative;
+	left: 1%;
+	top: 10%;
+} */
+.flex{
+	display: flex;
+}
+
+.firstParagraph{
+	/* margin: 2%; */
+	width: 25vw;
+	position: relative;
+	left: 0;
+	
+}
+.firstImage{
+	
+	/* margin:2%; */
+	
+}
+.secondParagraph{
+	/* margin: 25px 15px; */
+	width:300px;
+	
+}
+.secondImage{
+	width:300px;
+	/* margin:15px 30px; */
+	
+}
+
+.box{
+	border: 2px solid #fcfcfc;
+	background-color:#86b4f0;
+	line-height:1.6;
+	width:25vw;
+	height: 50vh;
+	margin:2vh 5vw 2vh 5vw ;
+}
+.min{
+	min-width:1000px;
+}
+.BlueContainer{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(169, 254, 255, 0.3);
+}
+.donate{
+	border: none;
+	color: rgb(255, 255, 255);
+	background-color: rgb(153, 255, 223);
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin:4px 2px;
+	width: 15vw;
+	height: 15vh;
+	border-radius: 5px;
+	position: absolute;
+	bottom:2vh;
+	right: 3vw;
+	cursor: pointer;
+	font-size: 4vh;
+	
+}
+.donate span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.6s;
+	text-shadow: rgba(10, 10, 10, 1);
+}
+
+.donate span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.6s;
+}
+
+.donate:hover span {
+	padding-right: 25px;
+}
+
+.donate:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+.DonateSec 	article{
+	font-size: medium;
+	line-height: normal;
+	padding: 1vw;
+	text-align: justify;
+	position: relative;
+	/*left: 50vw;
+	top: 12vh; */
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 44vw;
+	background-color: violet;
+	border: solid 2px black;
+	height: 50vh;
+}
+.Recovery{
+	float: left;
+	width: 38vw; 
+	margin-top: 6%;
+	margin-left: 3%;
+	position: absolute;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	/* border-top: 2px solid green; */
+	width: 100%;
+	position: relative;
+	/* left: 15px; */
+	/* margin-bottom: 25px;
+	margin-top: 15px; */
+	text-align: center;
+	background-color: rgba(255, 227, 14, 0.789);
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	/* padding: 5px 10px; */
+	/* z-index: 100; */
+}
+.Entry{
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+	height: auto;
+	width: 50vh;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	overflow: auto;
+
+}
+/* .heck{
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	
+} */
+input[type=number], select {
+	width: 80%;
+	height: 55px;
+	padding: 15px 20px;
+	margin: 8px 0;
+	margin-left: 10%;
+	display: inline-block;
+	position: relative;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border-radius: 7px;
+}
+.DonateNow{
+	background-color: cornflowerblue;
+	border: none;
+	margin-top: 1vh;
+	left: 10vw; 
+	/* right: 50px; */
+	position: absolute;
+	display: inline-block;
+	margin-left: auto;
+	/* margin-right: auto; */
+	padding: 2vw 5vh;
+	font-size: 5vh;
+	border-radius: 15px;
+}
+.DonateNow:hover{
+	background-color: rgb(51, 122, 255);
+}
+
+ul{
+    text-align: justify;
+    margin: 1.5vw;
+    width: 40vw;
+    padding: 5px;
+}
+
+.Cards{
+    width: 500px;
+    position: absolute;
+    right: 25vw; 
+    top: 5vh;
+}
+.Horse{
+    width: 500px;
+    position: absolute;
+    right: 4vw; 
+    top: 10vh;
+}
+.BlueContainerGamb{
+    width: 100%;
+    height: 37vh;
+    background-color: rgba(169, 254, 255, 0.3);
+}

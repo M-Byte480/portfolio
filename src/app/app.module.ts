@@ -11,7 +11,7 @@ import { BlogPageComponent } from './components/blog-page/blog-page.component';
 import { BlogComponent } from './components/blog-page/blog/blog.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
-import { HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { SplitCamelCasePipe } from './pipes/split-camel-case.pipe';
 import { ProjectComponent } from './components/projects/project/project.component';
 import { BaseModalComponent } from './components/modals/base-modal/base-modal.component';
@@ -56,7 +56,9 @@ import { NoCacheInterceptorComponent } from './interceptors/no-cache-interceptor
     ProjectModalComponent,
     NoCacheInterceptorComponent,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: NoCacheInterceptorComponent, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

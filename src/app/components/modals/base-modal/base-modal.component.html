@@ -6,8 +6,13 @@
       <p [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(firstParagraph)"></p>
 
       <ng-container *ngIf="videoSrc">
-        <iframe src="{{ videoSrc }}" frameborder="0" allowfullscreen
-                style="height:350px; width: 400px;"></iframe>
+        <div class="centered">
+          <iframe [src]="sanitize(videoSrc)"
+                  frameborder="0"
+                  allowfullscreen
+                  [style.height.px]="350"
+                  [style.width.px]="400"></iframe>
+        </div>
       </ng-container>
 
       <div>{{ secondParagraph }}

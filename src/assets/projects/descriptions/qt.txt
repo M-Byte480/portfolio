@@ -1,6 +1,13 @@
-<div style="text-align:center; height: 400px;">
-  <p>This project was about implementing an event drive cooking application.
-  Here is the video of me walking through the code under 5 minutes.</p>
-  <div style="content-align:center; " >
-    <iframe src="https://www.youtube.com/embed/vyX2W8G3pG0" frameborder="0" allowfullscreen style="height:350px; width: 400px;"></iframe>
-</div>
+description
+One of my favourite projects to worked on in college was this cooking application developed using Qt and C++.
+
+The project details was very abstract, it was to make something with food and/or recipes related, using Event-Driven Functionality.
+ Here is the video of me walking through the code under 5 minutes.
+video
+https://www.youtube.com/embed/vyX2W8G3pG0
+
+
+
+I had a lot of fun implementing these requirements as I was able to research and read about them. Keeping track of the memory management and making sure to handle them as soon as I started initializing in the heap.
+Because I was given the proper definition to look for, I didn't have to figure out by describing.
+

@@ -1,0 +1,13 @@
+description
+Data Structures and Algorithms (DSA) module for the 2nd year of my course, where we were taught about the basics of data structures and algorithms, and my solutions done in C++.
+
+DSA was an interesting module which I enjoyed. In this module we had covered the Big O notation for the time complexity of algorithms.
+The data structures we covered were: Heap, Binary Search Tree, Arrays, Linked List, Stack, Trees.
+
+
+We learned about the analysis of algorithms, and how do identify their time complexity.
+The main algorithms we covered were: Merge Sort, Bubble Sort, Binary Search, Linear Search.
+
+
+As of today, I have expanded on my knowledge and other data structures such as Hash Tables, Graphs, Queues, Deques, etc. Other search algorithms such as Depth First Search, Breadth First Search, etc.
+

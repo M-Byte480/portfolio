@@ -63,4 +63,10 @@ export class BaseModalComponent {
   openLink(): void {
     window.open(this.link, '_blank');
   }
+
+  sanitize(html: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(html);
+  }
+
+  protected readonly transition = transition;
 }
