@@ -1,5 +1,6 @@
 <div class="projectRoot" [class.expanded]="isExpanded" (click)="openProject()">
   <div class="text-container" [style.height.vh]="project.viewHeight || 15" >
+
   <ng-container *ngIf="project.imageSrc !== 'assets/images/projects/'">
     <img class="image"
          [style.height.vh]="12.5"
@@ -13,8 +14,8 @@
     <p class="hidden">{{ project.description }}</p>
   </div>
 </div>
-<!-- testVal is a two-way bound variable to check for state being open -->
 
+<!-- testVal is a two-way bound variable to check for state being open -->
 <app-base-modal [(testVal)]="showModal"
                 [title]="project.title"
                 [link]="project.link"

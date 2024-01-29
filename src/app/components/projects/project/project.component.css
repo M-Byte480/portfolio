@@ -81,19 +81,11 @@
   cursor: pointer;
   z-index:100;
 
-  .text-container{
-    align-items: flex-start;
-  }
-
   .text{
-    /*transform: translateY(-2rem);*/
     visibility: hidden;
-    /*position: relative;*/
-    /*top: 2%;*/
   }
 
   .hidden{
-    bottom: 0;
     visibility: visible;
     opacity: 1;
   }
