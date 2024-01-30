@@ -2,9 +2,9 @@
   <div class="big-m">M</div>
   <span class="hidden-text">Hehe <3</span>
   <div class="button-container">
-    <button class="button-27" routerLink="/home">About</button>
-    <button class="button-27" routerLink="/blogs">Blogs</button>
-    <button class="button-27" routerLink="/projects">Projects</button>
+    <button class="button-27" [class.active]="currentRoute === 'home'" routerLink="/home" (click)="changeHighlight()">About</button>
+    <button class="button-27" [class.active]="currentRoute === 'blogs'" routerLink="/blogs" (click)="changeHighlight()">Blogs</button>
+    <button class="button-27" [class.active]="currentRoute === 'projects'" routerLink="/projects" (click)="changeHighlight()">Projects</button>
 <!--    <button class="button-27" routerLink="/contacts">Contact</button>-->
   </div>
   <div class="big-k">K</div>
